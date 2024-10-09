@@ -47,7 +47,7 @@ function init2() {
     }
     let str = ''; //宣告變數來儲存迴圈選取到的資料
     lolHeros.forEach(function (item, index, array) {
-      if (e.target.value === '全英雄All') {
+      if (e.target.value === '全部All') {
         str += `<li><p class='nameBold'>${item.name}</p>是<p class='positonBlue'>${item.position}</p>走<p class='laneItalic'>${item.lane}</p><p class='specializeRed'>${item.specialize}</p></li>`;
       } else if (e.target.value === item.lane) {
         //迴圈篩選與input value值相同的物件資料
