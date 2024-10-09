@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: 370px;
+  padding: 10px;
+  border: 5px ridge #000;
+  background: linear-gradient(
+    to top left,
+    rgb(254, 226, 124) 85%,
+    rgb(252, 234, 202) 0%
+  );
+}
+input {
+  height: 35px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+label {
+  font-size: 14px;
+}
+h1 {
+  font-size: 22px;
+  span {
+    color: purple;
+  }
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 18px;
+  display: inline-block;
+}
+h4 {
+  text-decoration: underline;
+}
+select {
+  margin-top: 5px;
+}
+.laneFilter {
+  display: inline-block;
+}
+#name {
+  width: 70px;
+  height: 20px;
+}
+#langBtn {
+  color: orange;
+}
+.nameBold {
+  display: inline;
+  font-weight: bold;
+}
+.positonBlue {
+  display: inline;
+  color: blue;
+}
+.laneItalic {
+  display: inline;
+  font-style: italic;
+  color: black;
+}
+.specializeRed {
+  display: inline;
+  color: red;
+}
+.customizeBtn {
+  margin-top: 5px;
+  input {
+    color: green;
+  }
+}
+.list {
+  font-size: 14px;
+}

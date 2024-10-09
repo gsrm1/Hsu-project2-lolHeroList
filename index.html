@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoL英雄清單 | 定位及路線推薦</title>
+    <meta name="description" content="一個js練習用網站：資料篩選與增減功能" />
+    <link rel="stylesheet" href="dist/style/all.min.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1><span>LoL英雄清單</span>：定位及路線推薦</h1>
+      <h2>篩選器-顯示英雄定位與推薦路線：</h2>
+      <div class="laneFilter">
+        <input type="button" value="全英雄All" id="filterBtnAll" />
+        <input type="button" value="上單Top" id="filterBtnTop" />
+        <input type="button" value="打野Jg" id="filterBtnJg" />
+        <input type="button" value="中路Mid" id="filterBtnMid" />
+        <input type="button" value="下路Bot" id="filterBtnBot" />
+      </div>
+      <div class="addHero">
+        <div class="group">
+          <h3>自訂你的專屬英雄：</h3>
+          <input type="button" value="Switch Eng" id="langBtn" />
+        </div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="輸入名稱"
+          autocomplete="off"
+        />
+        <label for="position" id="positionLabel">定位:</label>
+        <select name="position" id="position" class="positonBlue">
+          <option value="坦克Tank">坦克Tank</option>
+          <option value="鬥士Fighter">鬥士Fighter</option>
+          <option value="法師Mage">法師Mage</option>
+          <option value="射手Marksman">射手Marksman</option>
+          <option value="輔助Support">輔助Support</option></select
+        ><br />
+        <label for="lane" id="laneLabel">路線:</label>
+        <select name="lane" id="lane" class="laneItalic">
+          <option value="上單Top">上單Top</option>
+          <option value="打野Jg">打野Jg</option>
+          <option value="中路Mid">中路Mid</option>
+          <option value="下路Bot">下路Bot</option>
+        </select>
+        <label for="specialize" id="specializeLabel">專精:</label>
+        <select name="specialize" id="specialize" class="specializeRed">
+          <option value="Sp專精0">Sp專精0</option>
+          <option value="Sp專精1">Sp專精1</option>
+          <option value="Sp專精2">Sp專精2</option>
+          <option value="Sp專精3">Sp專精3</option>
+          <option value="Sp專精4">Sp專精4</option>
+          <option value="Sp專精5">Sp專精5</option>
+          <option value="Sp專精6">Sp專精6</option>
+          <option value="Sp專精7">Sp專精7</option>
+          <option value="Sp專精8">Sp專精8</option>
+          <option value="Sp專精9">Sp專精9</option>
+          <option value="Sp專精10">Sp專精10</option></select
+        ><br />
+        <div class="customizeBtn">
+          <input type="button" value="新增英雄" id="submit" />
+          <input type="button" value="刪除英雄" id="delete" />
+          <span><input type="button" value="還原預設名單" id="reset" /></span>
+        </div>
+      </div>
+      <ul class="list"></ul>
+      <h4>*快樂風男，想去哪就去哪。</h4>
+    </div>
+    <script src="script/all.js"></script>
+  </body>
+</html>
